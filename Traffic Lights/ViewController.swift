@@ -29,15 +29,26 @@ class ViewController: UIViewController {
         toggleButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
+
+    @IBAction func makeButtonAction(_ sender: Any) {
+        if redLightView.alpha == 0.30000001192092896 && yellowLightView.alpha == 0.30000001192092896 && greenLightView.alpha == 0.30000001192092896 {
+            redLightView.alpha = 1
+            toggleButton.setTitle("Next", for: .normal)
+        } else if redLightView.alpha == 1 {
+            redLightView.alpha = 0.3
+            yellowLightView.alpha = 1
+        } else if yellowLightView.alpha == 1 {
+            yellowLightView.alpha = 0.3
+            greenLightView.alpha = 1
+        } else if greenLightView.alpha == 1 {
+            greenLightView.alpha = 0.3
+            redLightView.alpha = 1
+        }
+    }
     
     func makeViewIntoCircle (view: UIView) {
         view.layer.cornerRadius = view.layer.bounds.width / 2
         view.clipsToBounds = true
     }
-
-    @IBAction func makeButtonAction(_ sender: Any) {
-
-    }
-    
 }
 

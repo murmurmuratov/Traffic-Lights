@@ -23,11 +23,10 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="I5d-EH-9Py"/>
                                     <constraint firstAttribute="height" constant="70" id="lqg-Gw-9Wq"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="36"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfU-7a-jSL"/>
                                 </connections>
